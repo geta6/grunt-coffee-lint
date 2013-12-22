@@ -3,22 +3,22 @@ module.exports = (grunt) ->
   # Project configuration.
   grunt.initConfig
 
-    coffeelint: 
+    coffeelint:
       # global options
-      options: 
-        indentation: 
+      options:
+        indentation:
           value: 4
           level: 'warn'
 
       # a target that overrides default options
-      one: 
-        files: 
+      one:
+        files:
           src: ['test/fixtures/*.coffee']
-        options: 
-          indentation: 
+        options:
+          indentation:
             value: 2
             level: 'warn'
-          'no_trailing_semicolons': 
+          'no_trailing_semicolons':
             level: 'warn'
 
       # a simple target
@@ -33,5 +33,10 @@ module.exports = (grunt) ->
   # Default task.
   grunt.registerTask 'default', 'coffeelint'
 
-  grunt.registerTask 'release', 'Bump version, push to NPM.', (type)-> 
-    grunt.task.run ["bump: #{type || 'patch'}",'npm-publish']
+  grunt.registerTask 'test', 'coffeelint'
+
+  grunt.registerTask 'release', 'Bump version, push to NPM.', (type)->
+    grunt.task.run [
+      "bump:#{type || 'patch'}"
+      'npm-publish'
+    ]

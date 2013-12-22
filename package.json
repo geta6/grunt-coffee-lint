@@ -1,7 +1,7 @@
 {
   "name": "grunt-coffeelint",
   "description": "Lint your Coffee",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://github.com/vojtajina/grunt-coffeelint",
   "author": {
     "name": "Vojta Jína",
@@ -30,13 +30,13 @@
     "node": "*"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt default"
   },
   "peerDependencies": {
     "grunt": "~0.4"
   },
   "dependencies": {
-    "coffeelint": "~1.0.2"
+    "coffeelint": "~1.0"
   },
   "devDependencies": {
     "grunt": "~0.4",
