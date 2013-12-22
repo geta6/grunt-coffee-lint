@@ -1,47 +1,26 @@
 {
-  "name": "grunt-coffeelint",
+  "name": "grunt-coffee-lint",
   "description": "Lint your Coffee",
-  "version": "0.0.8",
-  "homepage": "https://github.com/vojtajina/grunt-coffeelint",
-  "author": {
-    "name": "Vojta Jína",
-    "email": "vojta.jina@gmail.com"
-  },
-  "contributors": [
-    "Christoph Neuroth <christoph.neuroth@gmail.com>",
-    "Ed Siok <sioked@gmail.com>",
-    "travis4all <travis4all@diamon.dz>"
-  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/geta6/grunt-coffee-lint",
+  "author": "geta6",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vojtajina/grunt-coffeelint.git"
+    "url": "git://github.com/geta6/grunt-coffee-lint.git"
   },
   "bugs": {
-    "url": "https://github.com/vojtajina/grunt-coffeelint/issues"
+    "url": "https://github.com/geta6/grunt-coffee-lint/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/vojtajina/grunt-coffeelint/blob/master/LICENSE-"
-    }
-  ],
+  "licenses": "MIT",
   "main": "grunt.js",
-  "engines": {
-    "node": "*"
-  },
-  "scripts": {
-    "test": "grunt default"
-  },
   "peerDependencies": {
-    "grunt": "~0.4"
+    "grunt": "~0.4.1"
   },
   "dependencies": {
-    "coffeelint": "~1.0"
+    "coffeelint": "~1.0",
+    "coffee-jshint": "~0.0.6"
   },
   "devDependencies": {
-    "grunt": "~0.4",
-    "grunt-bump": "~0.0.7",
-    "grunt-npm": "~0.0.2"
   },
   "keywords": [
     "gruntplugin"
